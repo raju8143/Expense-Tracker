@@ -1,0 +1,100 @@
+body{
+    font-family: "Comfortaa", sans-serif;
+}
+.header{
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: large;
+}
+.img{
+    border-radius: 50%;
+}   
+.input-form{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    box-shadow: 2px 2px 5px gray;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+#add-button{
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    
+    box-shadow: 2px 2px 5px gray;
+
+}
+.inputs{
+    width: 80%;
+}
+.cards{
+    margin: 20px;
+    display: flex;
+    
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 300px;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+}
+.transaction-table{
+    border: 1px solid black;
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px gray;
+}
+.header-row{
+    background-color: blue;
+    color: white;
+}
+.header-row th{
+    padding: 10px;
+    
+}
+
+@media only screen and (max-width:768px) {
+    .input-form{
+        flex-direction: column;
+        align-items: stretch;
+        background-color: white;
+        align-items: center;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        background-color: black;
+    }
+    .header{
+        background-color: black;
+    }
+    .header-row{
+        background-color: black;
+    }
+    #add-button{
+        align-self: center;
+        background-color: black;
+    }
+}
